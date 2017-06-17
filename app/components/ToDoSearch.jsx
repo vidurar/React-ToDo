@@ -2,8 +2,8 @@ const React = require('react');
 
 const ToDoSearch = React.createClass({
   handleSearch: function(){
-    const searchText = this.refs.searchText.value;
     const showCompleted = this.refs.showCompleted.checked;
+    const searchText = this.refs.searchText.value;
 
     this.props.onSearch(showCompleted, searchText);
   },
