@@ -77,7 +77,7 @@ describe('ToDoAPI',()=>{
       expect(filteredToDos.length).toBe(3);
 
     });
-    it('should return only completed items if showCompleted is false',() => {
+    it('should return only completed items if showCompleted is false', () => {
       let filteredToDos = ToDoAPI.filterToDos(todos, false, '');
 
       expect(filteredToDos.length).toBe(1);
